@@ -1,0 +1,105 @@
+body {
+    font-family:Segoe UI, sans-serif !important;
+}
+
+.bg-wrapper{
+    background-size:cover;
+    height:100vh;
+}
+
+.bg-wrapper::before{
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.35);
+}
+
+.centered {
+  position: fixed;
+  top: 15%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+}
+
+.top-right {
+  position:fixed;
+  top: 2vh;
+  right: 2vh;
+}
+
+.time-text {
+    font-weight: lighter;
+    z-index: 2;
+    color: #fff;
+}
+
+.time-text .time {
+    font-size: 70px;
+}
+
+.time-text .date {
+    font-size: 20px;
+}
+
+.settings {
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    padding: 1px 3px 2px 3px;
+    cursor: pointer;
+}
+
+.settingsDialog {
+    width: 20%;
+    background-color: white;
+    height: 15%;
+    border-radius: 3px;
+    position: absolute;
+    top: 8%;
+    right: 2%;
+    padding: 10px;
+    display: none;
+}
+
+.settingsDialog input {
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    padding: 5px;
+    width: 100%;
+}
+
+.settingsDialog button {
+    color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: black;
+    position: absolute;
+    right: 4%;
+}
+
+.settingsDialog input:focus,
+.settingsDialog button:focus {
+    outline:none;
+}
+
+.imgPreference {
+    color: white;
+    position: absolute;
+    right: 2%;
+    bottom: 2%;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.imgPreference:focus {
+    outline: none;
+}
+
+.imgPreference input {
+    transform: scale(1.5);
+    margin-left: 10px;
+}
+
+
+

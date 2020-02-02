@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Pixels",
+  "version": "1.0",
+  "description": "Pixels by Oruj Ahmadov",
+
+  "browser_action": {
+    "default_icon": "logo.png"
+  },
+
+  "chrome_url_overrides": {
+    "newtab": "pixels.html"
+  },
+
+  "permissions": [
+    "storage"
+  ]
+}
